@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  ...(process.env.STATIC_PREVIEW
+    ? { output: "export" as const, assetPrefix: "./", images: { unoptimized: true } }
+    : {}),
+  ...(process.env.STATIC_PREVIEW ? {} : { cacheComponents: true, partialPrefetching: true }),
   turbopack: {
     rules: {
       "*.css": {

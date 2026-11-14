@@ -36,7 +36,7 @@ export default function Nav() {
       <div className="wrap flex h-16 items-center justify-between">
         <a href="#top" aria-label="Anaula — home" className="block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/anaula-wordmark.png" alt="Anaula" width={111} height={30} className="h-[26px] w-auto md:h-[30px]" />
+          <img src="anaula-wordmark.png" alt="Anaula" width={111} height={30} className="h-[26px] w-auto md:h-[30px]" />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">

@@ -256,7 +256,7 @@ export default function Home() {
       <footer className="py-10">
         <div className="wrap flex flex-col items-center gap-5 text-sm text-ink/55 md:flex-row md:justify-between">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/anaula-wordmark.png" alt="Anaula" width={96} height={26} className="h-6 w-auto" />
+          <img src="anaula-wordmark.png" alt="Anaula" width={96} height={26} className="h-6 w-auto" />
           <div className="flex gap-6">
             <a href={LINKS.careers} {...ext} className="hover:text-ink">Careers</a>
             <a href={LINKS.linkedin} {...ext} className="hover:text-ink">LinkedIn</a>
